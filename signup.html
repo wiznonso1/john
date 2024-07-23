@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='signup.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='message.css')}}">
+    <title>Sign Up</title>
+</head>
+<body>
+    <section>
+        <div class="mainDiv">
+            <h1>SIGN UP</h1>
+            <div class="message">
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        <ul class="flash-messages">
+                            {% for message in messages %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                {% endwith %}
+                    </div>
+            <form id="form1" actions="{{url_for('signup')}}" methods="POST">
+                <div class="names">
+                    {{form.First_Name.label}}
+                    {%if form.First_Name.errors%}
+                    {{form.First_Name(class="is-invalid")}}
+                    <div>
+                        {%for error in form.First_Name.errors%}
+                        <span>{{error}}</span>
+                        {%endfor%}
+                    </div>
+                    {%else%}
+                    {{form.First_Name}}
+                    {%endif%}
+                </div>
+                <div><input type="text" placeholder="Other Names" class="otherNames" name="othernames"></div>
+                <div class="details">
+                    <input type="text" onfocus="(this.type = 'date')" placeholder="Date of Birth" id="dob" name="dob">
+                    <select name="gender" id="gender" class="classic">
+                        <option value="" disabled selected hidden>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="address">
+                    <input type="email" placeholder="Email Address" id="email" name="email" class="otherNames">
+                    <input type="password" placeholder="Enter Password" id="password" name="password" class="otherNames">
+                    <input type="password" placeholder="Confirm Password" id="cpass" name="cpass" class="otherNames">
+                </div>
+    
+                <div class="submit">
+                     <a href = "{{url_for('index')}}"><input type="submit" value="Get Started" id="button"></a>
+                </div>
+            </form>
+          
+
+            <br>
+            <label>Already have an account ? &nbsp <a href="{{url_for('index')}}">Sign in</a></label>
+            
+           
+        </div>
+
+    
+        
+    </section>
+</body>
+</html>

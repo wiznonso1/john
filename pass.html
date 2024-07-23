@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='pass.css')}}">
+    <title>Forgot Password</title>
+</head>
+<body>
+   <section>
+    <div class="mainDiv">
+        <h1>FORGOT PASSWORD</h1>
+        <small> Enter your email and we will send you a link to reset <br> your password </small>
+        <input type="email" id="email" placeholder="Enter your email address">
+        <input type="submit" value="Submit" id="submit">
+        <div id="back">
+            <i class="arrow left"></i>
+            <p><a href="{{url_for('index')}}">Back to Login</a></p>
+        </div>
+    </div>
+    
+   </section>
+</body>
+</html>

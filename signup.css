@@ -1,0 +1,126 @@
+*{
+    border: none;
+    outline: none;
+    margin: 0%;
+    padding: 0%;
+    font-family: "Century Gothic";
+}
+
+body{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url("flat-lay-health-still-life-arrangement-with-copy-space.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainDiv{
+    background-color: white;
+    height: 490px;
+    width: 480px;
+    margin: auto;
+    top: 50%;
+    left: 50%; 
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    padding: 30px 50px 20px 50px;
+}
+
+section div h1{
+    text-align: center;
+    padding-bottom: 20px;
+    margin: auto;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(32, 128, 187);
+}
+input{
+    background-color: lightgrey;
+}
+::placeholder{
+    color: black;
+}
+select{
+    background-color: lightgrey;
+    color: black;
+    width: 220px;
+    height: 38px;
+    border-radius: 30px;
+    padding: 0 20px 0 20px;
+    margin-bottom: 20px;
+}
+
+.names{
+    width: 100%;
+    margin: auto;
+    padding: 0 0 20px 0;
+    
+
+}
+#firstName{
+    width: 220px;
+    height: 30px !important;
+    padding: 20px;
+    border-radius:  30px !important;
+    margin-right: 20px;
+}
+#surname{
+    width: 220px;
+    height: 30px;
+    padding: 20px;
+    border-radius: 30px;
+}
+.otherNames{
+    width: 470px;
+    height: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.details{
+    width: 100%;
+    margin: auto;
+}
+#dob{
+    width: 220px;
+    height: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.address{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.submit{
+    width: 50%;
+    margin: auto;
+}
+#button{
+    width: 220px;
+    height: 30px;
+    border-radius: 30px;
+    /* margin: 10px;*/
+    padding: 17px 0 33px 0; 
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(
+        to left,
+        rgb(32, 128, 187), 
+        rgb(13, 62, 79)
+    );
+}
+
+input[type="text"]{
+    height: 30px !important;
+    border-radius: 20px !important;
+}

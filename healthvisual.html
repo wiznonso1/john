@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Health Data Visualization</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='healthvisual.css')}}"> 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <canvas id="healthChart"></canvas>
+
+  <script>
+    // Sample data (replace with actual data)
+    var dates = ["2023-01-01", "2023-02-01", "2023-03-01", "2023-04-01", "2023-05-01"];
+    var progress = [60, 65, 70, 75, 80];
+
+    // Create the chart
+    var ctx = document.getElementById('healthChart').getContext('2d');
+    var chart = new Chart(ctx, 
+    {
+      type: 'line',
+      data: {
+        labels: dates,
+        datasets: [{
+          label: 'Progress',
+          data: progress,
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100,
+            ticks: {
+              stepSize: 10
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Health Tracker</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='meals.css')}}"> 
+</head>
+<body>
+  <h1>Health Tracker</h1>
+  <div>
+    <form>
+      <label for="meal">Meal:</label>
+      <input type="text" id="meal" name="meal" placeholder="Enter meal details" required>
+
+      <label for="exercise">Exercise Routine:</label>
+      <input type="text" id="exercise" name="exercise" placeholder="Enter exercise routine" required>
+
+      <label for="sleep">Sleep Pattern:</label>
+      <textarea id="sleep" name="sleep" placeholder="Enter sleep pattern" required></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

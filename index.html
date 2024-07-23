@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">  
+</head>
+<body>
+    <section class="main">
+        <div class="mainDiv">
+            <p class="header">LOGIN</p>
+            <div class="Email Address">
+                <input type="text" id="EmailAddress" placeholder="Enter Email Address">
+            </div>
+
+            <div class="passwordDiv">
+                <input type="password" id="password" placeholder="Enter Password">
+            </div>
+
+            <div class="loginbtn">
+                <a href="{{url_for('layout')}}"><input type="submit" id="button" value="Login"></a>
+            </div>
+            <p id="fp"><a href="{{url_for('passes')}}">Forgot Password?</a></p>
+            <p id="su">Don't have an account? <b><a href="{{url_for('signup')}}">Sign Up</a></b></p>
+        </div>
+    </section>
+</body>
+</html>
+

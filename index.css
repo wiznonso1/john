@@ -1,0 +1,101 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    border: none;
+    outline: none;
+    font-family: "Century Gothic";
+}
+
+body{
+    background-image: url("flat-lay-health-still-life-arrangement-with-copy-space.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.mainDiv{
+    height: 350px;
+    width: 480px;
+    top: 50%;
+    left: 50%; 
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+    padding: 30px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.header{
+    font-weight: bolder;
+    font-size: 45px;
+    padding: 15px;
+    color: white;
+    
+}
+
+#EmailAddress{
+    height: 40px;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+/* #Email address{
+    height: 800px;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 30px;
+    
+} */
+
+.passwordDiv{
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+#password{
+    height: 40px;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+#button{
+    width: 300px;
+    height: 35px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(
+        to left,
+        rgb(32, 128, 187), 
+        rgb(13, 62, 79)
+    );
+}
+
+.loginbtn{
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+#fp{
+    color: white;
+    font-size: 12px;
+}
+
+#su{
+    color: white;
+    font-size: 12px;
+    padding-top: 5rem;
+}
+
+p a{
+    color: white;
+}

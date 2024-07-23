@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Health Goal Setter</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='goals.css')}}">  
+</head>
+<body>
+  <h1>Health Goal Setter</h1>
+  <form>
+    <label for="weight">Weight Loss Target (lbs):</label>
+    <input type="number" id="weight" name="weight" placeholder="Enter target weight loss" required>
+
+    <label for="exercise">Exercise Routine:</label>
+    <input type="text" id="exercise" name="exercise" placeholder="Enter exercise routine" required>
+
+    <label for="sleep">Sleep Goal (hours):</label>
+    <input type="number" id="sleep" name="sleep" placeholder="Enter sleep goal" required>
+
+    <input type="submit" value="Set Goals">
+  </form>
+
+  <h2>Current Goals</h2>
+  <div id="current-goals">
+    <!-- Display the current goals here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
